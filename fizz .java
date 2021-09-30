@@ -19,7 +19,10 @@ public class fizz_buzz_problem {
 
         // optimized solution (++ , -- take O(n) time)
         String output = "";
-        int c3 = 0, c5 = 0;
+        int c3 = 0;
+        int c5 = 0;
+        
+        //starting for loop
         for (int i = 1; i <= 100; i++) {
             c3++;
             c5++;
