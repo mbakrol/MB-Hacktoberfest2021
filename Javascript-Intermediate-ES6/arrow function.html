@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Function expression 
+        // const tampilNama = function (nama) {
+        //     return `Halo, ${nama}`
+        // }
+
+        // Arrow Function
+
+        // const tampilNama = (nama) => {
+        //     return `Halo, ${nama}`
+        // }
+
+        // implisif returnf 
+        // const tampilNama = nama => `Halo, ${nama}`
+
+
+        // const tampilNama = (nama, waktu) => {
+        //     return `Selamat ${waktu}, ${nama}`
+        // }
+
+        // const tampilNama = () => `Hellow wolrd`;
+
+        // console.log(tampilNama('Asep Slardar', 'Subuh', ))
+
+        // let mahasiswa = ['Asep Slardar', 'Budi Axe', 'Rika Ranger'];
+
+        // // const hitungJumlah = mahasiswa.map(function (nama) {
+        // //     return nama.length
+        // // })
+
+        // // const hitungJumlah = mahasiswa.map(nama => nama.length)
+
+        // const hitungJumlah = mahasiswa.map(nama => ({
+        //     nama,
+        //     jmlhHuruf: nama.length
+        // }))
+        // console.log(hitungJumlah);
+
+
+        // Konsep this pada arrow function
+
+        // construct function
+
+        // const Mahasiswa = function () {
+        //     this.nama = 'Asep Slardar';
+        //     this.umur = 44
+        //     this.sayHello = function () {
+        //         console.log(`Halo, nama saya ${this.nama}, saya ${this.umur} tahun`)
+        //     }
+        // }
+
+        // const namx = new Mahasiswa;
+
+        // Arrow Function 
+
+        const Mahasiswa = function () {
+            this.nama = 'Asep Slardar';
+            this.umur = 44;
+            this.sayHello = function () {
+                console.log(`Halo, nama saya ${this.nama}, saya ${this.umur} tahun`)
+            }
+
+            setInterval(() => {
+                console.log(this.umur++)
+            }, 500)
+        }
+
+        const namx = new Mahasiswa;
+    </script>
+</body>
+
+</html>
