@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1. Object Literal
+
+        // let mahasiswa1 = {
+        //     nama: 'Asep Slardar',
+        //     energy: 10,
+        //     makan: function (porsi) {
+        //         this.energy += porsi;
+        //         return console.log(`${this.nama} : Berhasil Energi Bertambah`)
+        //     }
+        // }
+
+        // let mahasiswa2 = {
+        //     nama: 'Fajar Hunter',
+        //     energy: 10,
+        //     makan: function (porsi) {
+        //         this.energy += porsi;
+        //         return console.log(`${this.nama} : Berhasil Energi Bertambah`)
+        //     }
+        // }
+
+        // Function Decklaration
+
+        // function Mahasiswa(nama, energi) {
+        //     let mahasiswa = {}
+        //     mahasiswa.nama = nama
+        //     mahasiswa.energi = energi
+
+        //     mahasiswa.makan = function (porsi) {
+        //         this.energi += porsi
+        //         return console.log(`${this.nama} : Berhasil Energi Bertambah`)
+        //     }
+
+        //     mahasiswa.main = function (jam) {
+        //         this.energi -= jam
+        //         return console.log(`${this.nama} : Energi Berkurang`)
+        //     }
+
+        //     return mahasiswa;
+        // }
+
+        // let asep = Mahasiswa('Asep Slardar', 10);
+        // let fajar = Mahasiswa('Fajar Hunter', 10);
+
+        // Construct Function
+        // keyword New
+
+        function Mahasiswa(nama, energi) {
+            this.nama = nama
+            this.energi = energi
+
+            this.makan = function (porsi) {
+                this.energi += porsi
+                return console.log(`${this.nama} : Berhasil Energi Bertambah`)
+            }
+
+            this.main = function (jam) {
+                this.energi -= jam
+                return console.log(`${this.nama} : Energi Berkurang`)
+            }
+        }
+
+        let asep = new Mahasiswa('Asep Slardar', 10);
+    </script>
+</body>
+
+</html>

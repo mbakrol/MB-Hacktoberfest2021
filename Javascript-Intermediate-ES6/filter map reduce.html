@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        const angka = [9, 5, -3, 1, 6, -4, -2, 2, 6, 4]
+
+        // Filter
+
+        // const NewAngka = angka.filter(a => a > 3);
+
+        // console.log(NewAngka)
+
+        // Map
+
+        // const NewAngka = angka.map(a => a * 2);
+
+        // console.log(NewAngka)
+
+        // Reduce
+
+        // const NewAngka = angka.reduce((accumulator, currentValues) => accumulator + currentValues)
+
+        // console.log(NewAngka)
+
+        // Method Chaining
+        const hasil = angka.filter(a => a > 5)
+            .map(a => a * 2)
+            .reduce((acc, cur) => acc + cur)
+
+        console.log(hasil);
+    </script>
+</body>
+
+</html>
