@@ -1,16 +1,21 @@
-package basic_package;
+import java.util.*;
 
-//import java.util.Scanner;
-public class EVEN_ODD_ternary {
+class CheckEvenOdd
+{
+  public static void main(String args[])
+  {
+    int num;
+    System.out.println("Enter an Integer number:");
 
-    public static void main(String[] args) {
+    //The input provided by user is stored in num
+    Scanner in = new Scanner(System.in);
+    num = in.nextInt();
 
-//        System.out.print("\n enter a number to check it is even or odd :: ");
-//        Scanner sc = new Scanner(System.in);
-//        int n = sc.nextInt();
-
-        int n = (int) (Math.random() * 1000);
-        System.out.println((n % 2 == 0) ? n + " is even" : n + " is odd");
-        // ? : is called ternary operator
-    }
+    /* If number is divisible by 2 then it's an even number
+     * else odd number*/
+    if ( num % 2 == 0 )
+        System.out.println("The number is even");
+     else
+        System.out.println("The number is odd");
+  }
 }
