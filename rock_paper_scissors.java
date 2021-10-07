@@ -3,7 +3,7 @@ package com.aman;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Rsp {
+public class rock_paper_scissors {
     public static void main(String[] args) {
         int i = 1;
 
